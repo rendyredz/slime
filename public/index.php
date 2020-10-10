@@ -1,14 +1,6 @@
 <?php
-
-require 'vendor/autoload.php';
-
-$app = new Slim\App();
-
-$app->get("/", function(){
-
-	$data =  User::all()->toJson();
-
-	echo '<pre>',print_r(json_decode($data,1),1),'</pre>';
-});
+require __DIR__ . '/../bootstrap/app.php';
+require __DIR__ . '/../bootstrap/container.php';
+require __DIR__ . '/../routes/web.php';
 
 $app->run();
