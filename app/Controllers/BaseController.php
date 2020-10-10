@@ -6,14 +6,13 @@
 
 namespace App\Controllers;
 
-use Interop\Container\ContainerInterface;
 
 class BaseController
 {
-    protected $c;
+   protected $ci;
 
-    public function __construct(ContainerInterface $container)
-    {
-        $this->c = $container;
+    public function __construct(ContainerInterface $ci) {
+        $this->ci = $ci;
     }
+    
 }

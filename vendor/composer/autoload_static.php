@@ -155,6 +155,8 @@ class ComposerStaticInitde72e9c991bb6682c06fe1a463aa80fc
     );
 
     public static $classMap = array (
+        'App\\Models\\Mahasiswa' => __DIR__ . '/../..' . '/app/Models/mahasiswa.php',
+        'App\\Models\\Sample' => __DIR__ . '/../..' . '/app/Models/Sample.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
