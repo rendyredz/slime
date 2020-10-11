@@ -11,14 +11,13 @@ class Mahasiswa
 {
    public function addMaha($request, $response){
 
-    $create = Mahamodel::create([
+    $dtCreate = create([
             'user_nama' => $_POST['nama'],
             'user_nim' => $_POST['nim'],
             'user_jurusan' => $_POST['jurusan'],
             'user_created_at' => date('Y-m-d H:i:s')
     ]);
     
-    echo '<pre>',print_r($create,1),'</pre>';
 
    }
 }

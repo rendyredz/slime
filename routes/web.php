@@ -8,6 +8,11 @@
 
 $app->get('/', function ($request, $response, $args) {
     return $this->view->render($response, 'home.twig', []);
-})->setName('profile');
+});
 
-$app->post('/mahasiswa', Mahasiswa::class . ":addMaha");
+$app->get('/mahasiswa', function ($request, $response, $args) {
+    return $this->view->render($response, 'table.twig', []);
+});
+
+$app->post('/addMahasiswa', Mahasiswa::class . ":addMaha");
+

@@ -39,7 +39,8 @@ $( ".btnAdd" ).click(function() {
    var $form = $("#formMaha");
     var data = getFormData($form);
     
-    $.post( "/mahasiswa",data, function( data ) {
+$.post( "/addMahasiswa",data, function( data ) {
+
         
     });
 });
